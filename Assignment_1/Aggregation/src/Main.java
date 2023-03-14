@@ -1,7 +1,13 @@
 public class Main {
     public static void main(String[] args) {
         CourseWork course_work = new CourseWork();
-        course_work.AddCourse("Adv. Software Engineering", "Nema", "Davapanah", "3-2636", "Clean Code", "Robort C. Martin", "Pearson 1st edition");
+        course_work.AddCourse("Adv. Software Engineering"
+                             , "Nema"
+                             , "Davapanah"
+                             , "3-2636"
+                             , "Clean Code"
+                             , "Robort C. Martin"
+                             , "Pearson 1st edition");
 
         Course new_course = new Course();
         new_course.SetCourseName("Light Literaturature");

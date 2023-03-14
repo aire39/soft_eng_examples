@@ -7,7 +7,13 @@ public class CourseWork {
 
     }
 
-    public void AddCourse(String course_name, String instructor_first_name, String instructor_last_name, String instructor_office_number, String book_title, String book_author, String book_publisher) {
+    public void AddCourse(String course_name
+                         ,String instructor_first_name
+                         ,String instructor_last_name
+                         ,String instructor_office_number
+                         ,String book_title
+                         ,String book_author
+                         ,String book_publisher) {
         Course add_course = new Course();
 
         add_course.SetCourseName(course_name);
