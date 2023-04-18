@@ -13,5 +13,8 @@ public class QuadraticTemplateCurve extends TemplateCurve {
                 }
             }
         }
+        else {
+            System.out.println("No enough points to create quadratic curve. Need at least 2 points and 1 anchor point (for a total of at least 3 points)!");
+        }
     }
 }

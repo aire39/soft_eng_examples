@@ -11,5 +11,8 @@ public class LinearTemplateCurve extends TemplateCurve {
                 }
             }
         }
+        else {
+            System.out.println("No enough points to create linear curve. Need at least 2 points!");
+        }
     }
 }
