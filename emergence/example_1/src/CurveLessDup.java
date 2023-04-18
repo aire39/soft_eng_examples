@@ -9,7 +9,6 @@ public class CurveLessDup {
     }
     void CreateLinearCurve(Point2D pos_0, Point2D pos_1, float step) {
         positions.clear();
-
         for (float i=0.0f; i<=1.0f; i+=step) {
             Point2D new_point = linearcurve(pos_0, pos_1, i);
             positions.add(new_point);
