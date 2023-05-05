@@ -1,32 +1,31 @@
-public abstract class Snack {
-    protected String name;
-    protected float price;
-    protected int quantity;
+public class Snack {
+    protected String snackName;
+    protected float snackPrice;
+    protected int snackQuantity;
 
-    Snack() {
-        SetupSnack();
+    Snack(String name, float price, int quantity) {
+        SetSnack(name, price, quantity);
+    }
+    private void SetSnack(String name, float price, int quantity) {
+        snackName = name;
+        snackPrice = price;
+        snackQuantity = quantity;
     }
 
-    protected abstract void SetupSnack();
-
     public String GetName() {
-        return name;
+        return snackName;
     }
 
     public float GetPrice() {
-        return price;
+        return snackPrice;
     }
 
     public int GetQuantity() {
-        return quantity;
+        return snackQuantity;
     }
 
     public int RetrieveSnack() {
-        quantity -= 1;
+        snackQuantity = Integer.max((snackQuantity-1), 0);
         return GetQuantity();
-    }
-
-    public void SetQuantity(int amount) {
-        quantity = amount;
     }
 }

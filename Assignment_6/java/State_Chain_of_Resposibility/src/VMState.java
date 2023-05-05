@@ -1,3 +1,3 @@
 public interface VMState {
-    void execute();
+    void execute(StateOfVendingMachine state_machine, VendingMachine vending_machine);
 }
